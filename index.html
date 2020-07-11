@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using CSS Grid</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+            height:100%;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 8fr 6fr 6fr 4fr;
+            height: 100vh;
+			grid-gap: 2px;
+			max-width: 100%;
+			margin: 0 auto;
+            
+		}
+		
+        header{
+            display: grid;
+        
+            background: #3bbced;
+			
+            overflow: auto;
+            grid-area: 1 / 1 / 1 / 5;
+            
+            grid-template-columns: 11fr, 9fr;
+            grid-template-rows: 7fr, 4.5fr, 4.5fr, 4fr;
+            background-color:lightcoral;
+
+
+        }
+        
+        main{
+            background: #3bbced;
+			padding: 2px;
+            overflow: auto;
+            grid-area: 2 / 2/ 4 / 5;
+        }
+        
+        nav{
+            background: #3bbced;
+			padding: 2px;
+            overflow: auto;
+            grid-area: 2/ 1 / 5/ 1;
+        }
+        
+        footer{
+            background: #3bbced;
+		
+            overflow: auto;
+            grid-area: 4/ 2 / 5 / 5;
+        }
+        .chapter-head {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-rows: repeat(80, 1fr);
+            grid-gap: 2px;
+            background: #d23f0e;
+            max-height:36vh;
+            min-height:32vh;
+            
+        }
+        .chapter-number {
+            grid-area: 52/ 14 / 65/ 15;
+            font-size: 5.4vw;
+            font-family:Arial, Helvetica, sans-serif, sans-serif;
+            font-weight: bold;
+        }
+        .chapter-label {
+            grid-area: 65/ 10 / 77/ 14;
+            font-size: 2vw;
+            font-family:Arial, Helvetica, sans-serif, sans-serif;
+            text-align:right;
+            vertical-align: text-bottom;
+            font-weight: bold;
+        }
+        .chap-title-area-label {
+            font-family:Arial, Helvetica, sans-serif, sans-serif;
+            grid-column: 5 / 9;
+            grid-row: 29 / 47;
+            font-size: 3.4vw;
+            background-color:lightslategray;
+        }
+        .chap-title-main-pic {
+            grid-column: 3 / 5;
+            grid-row: 13 / 65;
+            
+            background-color:rgb(41, 84, 21);
+        }
+
+
+    </style>
+    
+
+
+
+</head>
+<body>
+
+	<div id="content">
+
+		<header>
+            <div class="chapter-head">
+                <div class="chapter-label"> 
+                    Chapter
+                </div>
+                <div class="chapter-number"> 
+                    1
+                </div>
+                <div class="chap-title-area-label"> 
+                    Introduction
+                </div>
+
+                <div class="chap-title-main-pic"> 
+                    
+                </div>
+
+            </div>
+            
+           
+        </header>
+        <main>Main</main>
+        
+        <!-- <aside>Aside</aside> -->
+        <nav>Nav</nav>
+        <footer>Footer</footer>
+
+    </div>
+    
+
+</body>
+</html>
