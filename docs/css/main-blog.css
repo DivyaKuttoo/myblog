@@ -14,7 +14,8 @@ img {
    font-family:ostrich sans medium;
    font-style:normal;
    font-weight:400;
-   src:local('Ostrich Sans Medium'),local('OstrichSans-Medium'),url(http://allfont.ru/cache/fonts/ostrich-sans-medium_97561aacaa76e3c08b62299fb4ee46b0.woff) format('woff'),url(http://allfont.ru/cache/fonts/ostrich-sans-medium_97561aacaa76e3c08b62299fb4ee46b0.ttf) format('truetype')
+   src:local('Ostrich Sans Medium'),local('OstrichSans-Medium'),
+   url("./ostrich-regular.ttf") format('truetype')
   }
 body { 
     display: grid;
