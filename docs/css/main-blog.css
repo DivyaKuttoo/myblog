@@ -1,4 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css?family=Ruda:900');
+
+img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
 @font-face {
   font-family: "Pacifico";
   src: url("Pacifico.ttf");
@@ -13,7 +21,7 @@ body {
     display: grid;
     grid-template-areas: 
       "header header"
-      "ads article"
+      "nav article"
       "nav article"
       "nav footer";
     grid-template-rows: 350px 120px 1fr 70px;  
@@ -22,10 +30,14 @@ body {
     grid-column-gap: 10px;
     height: 100vh;
     margin: 0;
+    background-image: url(http://www.toptal.com/designers/subtlepatterns/patterns/symphony.png);
+    
+    
+
     }  
   header,footer, article, nav {
     padding: 1.2em;
-    background: yellowgreen;
+    background: yellowgreen; 
     }
   #pageHeader {
     padding:1.1em;
@@ -33,6 +45,8 @@ body {
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;  
     grid-row-gap: 15px;
+    background-image: url(http://www.toptal.com/designers/subtlepatterns/patterns/symphony.png);
+    
     
     }
   #pageHeaderDate {
@@ -50,7 +64,8 @@ body {
     grid-row: 1 / 2;
     text-align: right;
     font-size: 1.2vw;
-    font-family: 'Ostrich Sans Medium', arial;
+    font-weight:900;
+    font-family: 'Ostrich Sans Heavy', arial;
 
   }
   #pageHeaderName {
@@ -58,6 +73,7 @@ body {
     grid-row: 1 / 2;
     text-align: left;
     font-size: 1.2vw;
+    
     font-family: 'Ostrich Sans Medium', arial;
   }
 
@@ -84,10 +100,15 @@ body {
     
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    font-size: 1.2vw;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif, sans-serif;
-    font-weight: bold;
+    color: #d54d7b; 
+    font-family:  'Pacifico',cursive; 
+    font-size: 45px; 
+    line-height: 24px; 
+    font-weight: normal; 
+    margin-bottom: 0px; 
+    padding: 0px;
+    text-align: center; 
+    text-shadow: 0 1px 1px #fff;
   
   }
 
