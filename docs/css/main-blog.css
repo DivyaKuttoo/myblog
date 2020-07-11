@@ -35,7 +35,7 @@ body {
     
 
     }  
-  header, {
+  header {
     padding: 1.2em;
     background: yellowgreen; 
     }
@@ -123,6 +123,7 @@ body {
     padding-right: 37.5%; 
   }
   #mainNav { 
+    padding: 1.2em;
     grid-area: nav; 
     }
   #siteAds { 
