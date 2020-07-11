@@ -45,7 +45,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 5fr 1fr;  
     grid-row-gap: 15px;
-    background-image: url(http://www.toptal.com/designers/subtlepatterns/patterns/symphony.png);
+    background-image: url(../images/symphony.png);
     
     
     }
