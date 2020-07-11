@@ -1,3 +1,14 @@
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("Pacifico.ttf");
+ }
+ @font-face{
+   font-family:ostrich sans medium;
+   font-style:normal;
+   font-weight:400;
+   src:local('Ostrich Sans Medium'),local('OstrichSans-Medium'),url(http://allfont.ru/cache/fonts/ostrich-sans-medium_97561aacaa76e3c08b62299fb4ee46b0.woff) format('woff'),url(http://allfont.ru/cache/fonts/ostrich-sans-medium_97561aacaa76e3c08b62299fb4ee46b0.ttf) format('truetype')
+  }
 body { 
     display: grid;
     grid-template-areas: 
@@ -5,20 +16,81 @@ body {
       "ads article"
       "nav article"
       "nav footer";
-    grid-template-rows: 80px 120px 1fr 70px;  
+    grid-template-rows: 350px 120px 1fr 70px;  
     grid-template-columns: 20% 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: 100vh;
     margin: 0;
     }  
-  header, footer, article, nav, div {
+  header,footer, article, nav {
     padding: 1.2em;
     background: yellowgreen;
     }
   #pageHeader {
+    padding:1.1em;
     grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;  
+    grid-row-gap: 15px;
+    
     }
+  #pageHeaderDate {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-bottom: 4px solid #ffa94d;
+    padding: 1em;
+    color: #d9480f;
+  }
+  #pageHeaderToday {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: right;
+    font-size: 1.2vw;
+    font-family: 'Ostrich Sans Medium', arial;
+
+  }
+  #pageHeaderName {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+    font-size: 1.2vw;
+    font-family: 'Ostrich Sans Medium', arial;
+  }
+
+  #pageHeaderTitle {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 4px solid #ffa94d;
+    padding: 1em;
+    color: #d54d7b; 
+    font-family:  'Pacifico',cursive; 
+    font-size: 65px; 
+    line-height: 30px; 
+    font-weight: normal; 
+    margin-bottom: 0px; 
+    padding: 0px;
+    text-align: center; 
+    text-shadow: 0 1px 1px #fff;
+
+  }
+  #pageHeaderSubtitle {
+    
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 1.2vw;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: bold;
+  
+  }
+
   #pageFooter {
     grid-area: footer;
     }
