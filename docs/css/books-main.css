@@ -1,10 +1,5 @@
 
 
-#divya-img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-}
 @font-face {
   font-family: "Pacifico";
   src: url("Pacifico.ttf");
@@ -19,12 +14,12 @@
 body { 
     display: grid;
     grid-template-areas: 
-      "header header"
-      "nav article"
-      "nav article"
-      "footer footer";
+      "header"
+      "article"
+      "article"
+      "footer";
     grid-template-rows: 350px 120px 1fr 70px;  
-    grid-template-columns: 30% 1fr;
+    grid-template-columns:  1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: 100vh;
@@ -33,9 +28,6 @@ body {
     
     }  
   
-    #mainNav {
-      padding-left: 100px;
-    }
   #pageHeader {
     padding:1.1em;
     grid-area: header;
@@ -115,98 +107,53 @@ body {
 
   #articleContainer{
     display:grid;
-    grid-template-columns: 1fr 12fr 6fr;
+    grid-template-columns: 7% 1fr 5% ;
+    grid-template-rows:   1fr 1fr 1fr;
     grid-area: article;   
   }
-  #mainArticle { 
-    
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    text-align: justify; 
-    font-size: 1.4vw; 
-    font-family: 'Ostrich Sans Bold', sans-serif;
-  }
-  #articleSideNav { 
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    text-align: left; 
-    font-size: 1.4vw; 
-    font-family: 'Ostrich Sans Bold', sans-serif;
-    
-    padding-right: 80px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-    padding-top: 20px;
-  }
-  #music { 
-    
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    font-family: 'Ostrich Sans Bold', sans-serif;
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    
-    
-  }
-  #books { 
-    
+  .prev { 
+    margin-left:20px;
+    background-color: transparent;
+    border: unset;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-   
+    text-align: justify; 
+    font-size: 4.5vw; 
     font-family: 'Ostrich Sans Bold', sans-serif;
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    
-    
-
   }
   
-  #science { 
-    
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-   
+  .next { 
+    background-color: transparent;
+    border: unset;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    text-align: justify; 
+    font-size: 4.5vw; 
     font-family: 'Ostrich Sans Bold', sans-serif;
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    margin-bottom: 50px;
-   
   }
+  #books > img{ 
+    width: 30%;
+    height:100%;
+  
+}
+  #books { 
+    padding-left: 5%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    overflow:hidden ;
+    grid-auto-flow: row;
+  }
+  #books > button {
+    color: transparent;
+  }
+  
 
-
-  #mainNav { 
-    padding-left: 40px;
-    grid-area: nav; 
-  }
-  #siteAds { 
-    grid-area: ads; 
-  } 
-  .btn-primary {
-    background-color:#d54d7b;
-    border-color:#d54d7b; 
-   
-  }
- #musButton {
-   text-align: center;
-   align-self: end;
-   
- }
- .card {
-  width: 100%;
-  height: 100%;
- }
   /* Stack the layout on small devices/viewports. */
   @media all and (max-width: 575px) {
     body { 
       grid-template-areas: 
         "header"
         "article"
-        "ads"
-        "nav"
         "footer";
       grid-template-rows: 80px 1fr 70px 1fr 70px;  
       grid-template-columns: 1fr;
