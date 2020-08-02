@@ -140,7 +140,7 @@ body {
 }
 a, a:active, a:hover, a:focus {
     text-decoration: none;
-    color: #fdb907;
+    color: #d54d7b;;
 }
 h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
@@ -1062,7 +1062,7 @@ a.comment-reply-link {
     border: 1px solid;
     border-radius: 3px;
     padding: 10px 20px;
-    color: #fdb907;
+    color: #d54d7b;
     background-color: transparent;
     font-weight: 400;
 }
@@ -1225,7 +1225,7 @@ span.comments-meta i {
     border: 1px solid;
     padding: 8px;
     border-radius: 5px;
-    border-color: #d9d9d9;
+    border-color: #d54d7b;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
