@@ -16,9 +16,8 @@ body {
     grid-template-areas: 
       "header"
       "article"
-      "article"
       "footer";
-    grid-template-rows: 350px 120px 1fr 70px;  
+    grid-template-rows: 350px 1fr 70px;  
     grid-template-columns:  1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
@@ -105,57 +104,5 @@ body {
     grid-area: footer;
     }
 
-  #articleContainer{
-    display:grid;
-    grid-template-columns: 7% 1fr 5% ;
-    grid-template-rows:   1fr 1fr 1fr;
-    grid-area: article;   
-  }
-  .prev { 
-    margin-left:20px;
-    background-color: transparent;
-    border: unset;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    text-align: justify; 
-    font-size: 4.5vw; 
-    font-family: 'Ostrich Sans Bold', sans-serif;
-  }
   
-  .next { 
-    background-color: transparent;
-    border: unset;
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    text-align: justify; 
-    font-size: 4.5vw; 
-    font-family: 'Ostrich Sans Bold', sans-serif;
-  }
-  #books > img{ 
-    width: 30%;
-    height:100%;
   
-}
-  #books { 
-    padding-left: 5%;
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    overflow:hidden ;
-    grid-auto-flow: row;
-  }
-  #books > button {
-    color: transparent;
-  }
-  
-
-  /* Stack the layout on small devices/viewports. */
-  @media all and (max-width: 575px) {
-    body { 
-      grid-template-areas: 
-        "header"
-        "article"
-        "footer";
-      grid-template-rows: 80px 1fr 70px 1fr 70px;  
-      grid-template-columns: 1fr;
-   }
-  }

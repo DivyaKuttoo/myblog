@@ -1,14 +1,3 @@
-$.fn.animatePrependTo = function (sel, speed) {
-  var $this = this,
-    newEle = $this.clone(true).prependTo(sel),
-    newPos = newEle.position();
-  newEle.hide();
-  $this.css('position', 'absolute').animate(newPos, speed, function () {
-    newEle.show();
-    $this.remove();
-  });
-  return newEle;
-};
 
 function onNext() {
   var bookElement = $('#books');
