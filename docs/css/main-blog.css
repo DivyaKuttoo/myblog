@@ -129,6 +129,7 @@ body {
   #articleSideNav { 
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: fit-content(33%) fit-content(33%) fit-content(33%);
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     text-align: left; 
