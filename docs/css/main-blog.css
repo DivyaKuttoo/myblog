@@ -128,11 +128,11 @@ body {
   }
   #articleSideNav { 
     display:grid;
-    grid-template-rows: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(2%);
+    grid-template-rows: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     text-align: left; 
-    font-size: 1.4vw; 
+    font-size: 0.8vw;
     font-family: 'Ostrich Sans Bold', sans-serif;
     padding-right: 80px;
     padding-left: 80px;
@@ -186,7 +186,7 @@ body {
       grid-template-areas: 
         "header"
         "article"
-        "ads"
+        "nav"
         "nav"
         "footer";
       grid-template-rows: 80px 1fr 70px 1fr 70px;  
