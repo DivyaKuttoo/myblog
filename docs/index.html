@@ -1,17 +1,58 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@DivyaKuttoo
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+DivyaKuttoo
+/
+myblog
+Template
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+myblog/docs/index.html
+@DivyaKuttoo
+DivyaKuttoo Update index.html
+Latest commit cebcded 12 hours ago
+History
+1 contributor
+106 lines (88 sloc) 4.18 KB
+
 <!doctype html>
 <html>
 <title>Divya's Blog - Welcome!</title>
 
 <head>
-    <link rel="stylesheet" href="../css/main-blog.css">
-
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main-blog.css">
+    <script src="./bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" id="envo-ecommerce-stylesheet-css" href="./css/envo-ecommerce-css.css" type="text/css"
+        media="all">
 </head>
 
 <body>
     <header id="pageHeader">
         <div id="pageHeaderDate">
             <div id="pageHeaderToday">
-                July 11, 2020
+                July 9, 2020
             </div>
             <div id="pageHeaderName">
                 DIVYA GIRIDHAR
@@ -19,7 +60,7 @@
 
         </div>
         <div id="pageHeaderTitle">
-            Divya's Science Page
+            Divya's Blog
         </div>
         <div id="pageHeaderSubtitle">
             -Music-Books-Science-Inspiration-
@@ -36,26 +77,79 @@
             Read on, and enjoy…
         </div>
         <div id="articleSideNav">
-            <div id="music">
-                <button id="music" type="button">
-                </button>
-                <p style="display: flex;
-                align-items: flex-end;
-                justify-content: flex-end;">Music</p>
+
+            <div id="music" style="background-color:white;">
+                <h5 style="text-align:center;color:black;">Indian Classical Music</h5>
+                <div class="card align-items-center"
+                    style="background: url('./images/indian-music.png');background-size:4em;">
+                    <div class="card-body">
+
+                        <div id="musButton"> <a href="#" class="btn btn-primary">Music</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <button id="books" type="button">
-                Books
-            </button>
-            <button id="science" type="button">
-                Science
-            </button>
+
+            <div id="books" style="background-color:white;">
+                <h5 style="text-align:center;color:black;">My Favorite Books</h5>
+                <div class="card align-items-center"
+                    style="background: url('./images/books.jpeg');background-size:4em;">
+                    <div class="card-body">
+                        <div id="musButton"> <a href="./html/new-books.html" class="btn btn-primary">Books</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="science" style="background-color:white;">
+                <h5 style="text-align:center;color:black;">Scientists and Ideas</h5>
+                <div class="card align-items-center"
+                    style="background: url('./images/science.jpg');background-size:4em;">
+                    <div class="card-body">
+                        <div id="musButton"> <a href="./html/science-main.html" class="btn btn-primary">Science</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
+
+
     </article>
     <nav id="mainNav">
+        <img id="divya-img" src="./images/Divya.jpg">
+        </img>
+
     </nav>
 
-    <footer id="pageFooter">Footer</footer>
+
+    <footer id="pageFooter" class="footer-credits container-fluid">
+        <div class="container">
+            <footer id="colophon" class="footer-credits container-fluid">
+                <div class="container">
+                    <div class="footer-credits-text text-center">
+                        <a href="#" rel="noopener">Divya Giridhar</a> https://divyakuttoo.github.io/myblog - 2020 -
+                        2021 </div>
+                </div>
+            </footer>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
