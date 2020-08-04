@@ -128,57 +128,39 @@ body {
   }
   #articleSideNav { 
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-rows: fit-content(33%) fit-content(33%) fit-content(33%);
+    grid-template-rows: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(2%);
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     text-align: left; 
     font-size: 1.4vw; 
     font-family: 'Ostrich Sans Bold', sans-serif;
-    
     padding-right: 80px;
-    padding-bottom: 50px;
     padding-left: 80px;
-    padding-top: 20px;
   }
   #music { 
-    
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 30px;
-    
-    
+    margin-bottom: 10px;
   }
   #books { 
-    
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-   
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 50px;
-    
-    
-
+    margin-bottom: 10px;
   }
-  
   #science { 
-    
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-   
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 50px;
-   
+    margin-bottom: 10px;
   }
-
-
   #mainNav { 
     padding-left: 40px;
     grid-area: nav; 
@@ -189,12 +171,10 @@ body {
   .btn-primary {
     background-color:#d54d7b;
     border-color:#d54d7b; 
-   
   }
  #musButton {
    text-align: center;
    align-self: end;
-   
  }
  .card {
   width: 100%;
