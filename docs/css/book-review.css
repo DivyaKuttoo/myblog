@@ -1,0 +1,48 @@
+
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("Pacifico.ttf");
+   }
+   @font-face{
+     font-family:ostrich sans medium;
+     font-style:normal;
+     font-weight:400;
+     src:local('Ostrich Sans Medium'),local('OstrichSans-Medium'),
+     url("./ostrich-regular.ttf") format('truetype')
+    }
+  body {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "article"
+        "footer";
+      grid-template-rows: 8% 1fr 4.9%;
+      grid-template-columns:  1fr;
+      height: 100vh;
+      margin: 0;
+      background-image: url(../images/symphony.png);
+      }
+    #pageHeaderSubtitle {
+      color: #d54d7b;
+      font-family:  'Pacifico',cursive;
+      font-size: 2em;
+      line-height: 1em;
+      font-weight: normal;
+      margin-bottom: 0px;
+      padding: 0.2%;
+      text-align: center;
+      text-shadow: 0 1px 1px #fff;
+    }
+    #pageFooter {
+      grid-area: footer;
+      }
+  #site-navigation {
+    background-color: transparent;
+    border-color: #d54d7b;
+    border-width: 0.1em;
+  }
+  .navbar-nav > li > a {
+      padding-left:1.4em;
+      font-size: 1.4em;
+    }
