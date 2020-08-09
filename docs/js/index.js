@@ -4,7 +4,7 @@ function gotoScienceMain() {
 
 $("#show-book").click(function () {
     alert('test');
-    $.get("./html/test2.html", function (data) {
+    $.get("./html/books/test2.html", function (data) {
         $("#book-rev").html(data);
         // after loading open modal
         $("#book-modal").modal('show');
