@@ -3,8 +3,9 @@
 #divya-img {
   object-fit: cover;
   width: 100%;
-  max-height: 100%;
+  max-height: 90%;
 }
+
 @font-face {
   font-family: "Pacifico";
   src: url("Pacifico.ttf");
@@ -23,7 +24,7 @@ body {
       "nav article"
       "nav article"
       "footer footer";
-    grid-template-rows: 350px 120px 1fr 70px;  
+    grid-template-rows: 30% 10% 1fr 5%;  
     grid-template-columns: 30% 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
@@ -33,9 +34,7 @@ body {
     
     }  
   
-    #mainNav {
-      padding-left: 100px;
-    }
+   
   #pageHeader {
     padding:1.1em;
     grid-area: header;
@@ -84,8 +83,8 @@ body {
     padding: 1em;
     color: #d54d7b; 
     font-family:  'Pacifico',cursive; 
-    font-size: 65px; 
-    line-height: 30px; 
+    font-size: 3em; 
+    line-height: 1.3em; 
     font-weight: normal; 
     margin-bottom: 0px; 
     padding: 0px;
@@ -99,8 +98,8 @@ body {
     grid-row: 3 / 4;
     color: #d54d7b; 
     font-family:  'Pacifico',cursive; 
-    font-size: 45px; 
-    line-height: 24px; 
+    font-size: 2.0em; 
+    line-height: 1em; 
     font-weight: normal; 
     margin-bottom: 0px; 
     padding: 0px;
@@ -143,7 +142,7 @@ body {
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   #books { 
     grid-column: 1 / 2;
@@ -151,7 +150,7 @@ body {
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   #science { 
     grid-column: 1 / 2;
@@ -159,15 +158,14 @@ body {
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   #mainNav { 
+    
     padding-left: 40px;
     grid-area: nav; 
   }
-  #siteAds { 
-    grid-area: ads; 
-  } 
+  
   .btn-primary {
     background-color:#d54d7b;
     border-color:#d54d7b; 
@@ -180,16 +178,4 @@ body {
   width: 100%;
   height: 100%;
  }
-  /* Stack the layout on small devices/viewports. */
-  @media all and (max-width: 575px) {
-    body { 
-      grid-template-areas: 
-        "header"
-        "article"
-        "nav"
-        "nav"
-        "footer";
-      grid-template-rows: 80px 1fr 70px 1fr 70px;  
-      grid-template-columns: 1fr;
-   }
-  }
+ 

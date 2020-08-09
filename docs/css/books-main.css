@@ -17,10 +17,9 @@ body {
       "header"
       "article"
       "footer";
-    grid-template-rows: 350px 1fr 70px;  
+    grid-template-rows: 6% 1fr 4.9%;  
     grid-template-columns:  1fr;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    
     height: 100vh;
     margin: 0;
     background-image: url(../images/symphony.png);
@@ -31,63 +30,28 @@ body {
     padding:1.1em;
     grid-area: header;
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;  
+    grid-template-rows: 1fr ;  
+  
     grid-row-gap: 15px;
     background-image: url(../images/symphony.png);
-    padding-bottom: 60px;
+    
     
     }
-  #pageHeaderDate {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    border-bottom: 4px solid #ffa94d;
-    padding: 1em;
-    color: #d9480f;
-  }
+  
   #pageHeaderToday {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    
     text-align: right;
     font-size: 1.2vw;
     font-weight:900;
     font-family: 'Ostrich Sans Medium', arial;
 
   }
-  #pageHeaderName {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    text-align: left;
-    font-size: 1.2vw;
-    
-    font-family: 'Ostrich Sans Medium', arial;
-  }
+  
 
-  #pageHeaderTitle {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    border-bottom: 4px solid #ffa94d;
-    padding: 1em;
-    color: #d54d7b; 
-    font-family:  'Pacifico',cursive; 
-    font-size: 65px; 
-    line-height: 30px; 
-    font-weight: normal; 
-    margin-bottom: 0px; 
-    padding: 0px;
-    text-align: center; 
-    text-shadow: 0 1px 1px #fff;
-
-  }
+  
   #pageHeaderSubtitle {
     
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    
     color: #d54d7b; 
     font-family:  'Pacifico',cursive; 
     font-size: 45px; 
@@ -104,5 +68,12 @@ body {
     grid-area: footer;
     }
 
-  
-  
+#site-navigation {
+  background-color: transparent;
+  border-color: #d54d7b; 
+  border-width: 0.1em;
+}
+.navbar-nav > li > a {
+    padding-left:1.4em;
+    font-size: 1.4em;
+  }

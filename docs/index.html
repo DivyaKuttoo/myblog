@@ -32,46 +32,48 @@
     </header>
     <article id="articleContainer">
         <div id="mainArticle">
-            This blog explores everything from books to music. I have attempted to collect the work of Indian classical
-            music masters throughout my six years of playing sitar, I will share some of my favorites on the music page.
-            I also want to share my favorite books, and how they impacted my life. I am also interested in science and I
-            have recorded some simple at home experiments which will be documented in this blog.
-            Lastly, this blog will also include breakthrough historical events in scientific fields and how these events
-            inspired the life as we see it today.
-            Read on, and enjoy…
+            I am currently a High School student. I have a passion for Music, Books and Science. I have been learning the Sitar for over six years. This blog
+            is my humble attempt at organizing my interests. I have collected musical works of great Indian classical
+            Musicians. You can find some of the links under the Music category. I have also tried to add some samples of
+            my Sitar
+            play. I have been reading many technical and non-technical books. In the books section, I have complied my
+            list of favorites with review/commentary. I have a deep interest in Science and Technology as well. I have
+            written about
+            Scientists and their inspiring ideas.
+            I hope you enjoy my blog, please feel free to drop me a note if you like this blog....
         </div>
         <div id="articleSideNav">
 
-            <div id="music" style="background-color:white;">
-                <p style="text-align:center;color:black;">Indian Classical Music</p>
+            <div id="music" style="background-color: #FFC00A;">
+                <p style="text-align:center;color:black;font-weight:bolder ;">Indian Classical Music</p>
                 <div class="card align-items-center"
-                    style="background: url('./images/indian-music.png');background-size:4em;">
+                    style="background: url('./images/indian-music.png');background-size:5em;">
                     <div class="card-body">
 
-                        <div id="musButton"> <a href="#" class="btn btn-primary">Music</a>
+                        <div id="musButton"> <a href="#" class="btn btn-primary" style="border-width:3px; border-color:white;">Music</a>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <div id="books" style="background-color:white;">
-                <p style="text-align:center;color:black;">My Favorite Books</p>
+            <div id="books" style="background-color: #FFC00A;">
+                <p style="text-align:center;color:black;font-weight:bolder">My Favorite Books</p>
                 <div class="card align-items-center"
-                    style="background: url('./images/books.jpeg');background-size:4em;">
+                    style="background: url('./images/books.jpeg');background-size:6em;">
                     <div class="card-body">
-                        <div id="musButton"> <a href="./html/new-books.html" class="btn btn-primary">Books</a>
+                        <div id="musButton" > <a href="./html/new-books.html" class="btn btn-primary" style="border-width:3px; border-color:white;">Books</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div id="science" style="background-color:white;">
-                <p style="text-align:center;color:black;">Scientists and Ideas</p>
+            <div id="science" style="background-color: #FFC00A;">
+                <p style="text-align:center;color:black;font-weight:bolder">Scientists and Ideas</p>
                 <div class="card align-items-center"
-                    style="background: url('./images/science.jpg');background-size:4em;">
+                    style="background: url('./images/science.jpeg');background-size:9em;">
                     <div class="card-body">
-                        <div id="musButton"> <a href="./html/science-main.html" class="btn btn-primary">Science</a>
+                        <div id="musButton"> <a href="./html/science-main.html" class="btn btn-primary" style="border-width:3px; border-color:white;">Science</a>
                         </div>
                     </div>
                 </div>
@@ -82,17 +84,53 @@
 
 
     </article>
-    <nav id="mainNav">
+
+    <div id="mainNav">
         <img id="divya-img" src="./images/Divya.jpg">
         </img>
+        <div class="text-center">
 
-    </nav>
+            <button type="button" style="margin-top:0.4em" class="btn btn-primary text-center" data-toggle="modal"
+                data-target="#exampleModalCenter">
+                Sample Video
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" width="640" height="480"
+                                    src="./videos/Divya-Group-Sitar-Rag-Kamaj.mp4" frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
 
 
     <footer id="pageFooter" class="footer-credits container-fluid">
         <div class="container">
             <div class="footer-credits-text text-center">
-                <a href="#" rel="noopener">Divya Giridhar</a> https://divyakuttoo.github.io/myblog - 2020 -
+                <a href="#" rel="noopener" style="color:rgba(255, 255, 0, 1)">Divya Giridhar</a> https://divyakuttoo.github.io/myblog divyakuttoo@gmail.com - 2020 -
                 2021 </div>
         </div>
     </footer>
