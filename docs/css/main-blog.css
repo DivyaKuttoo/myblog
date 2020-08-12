@@ -24,12 +24,11 @@ body {
       "nav article"
       "nav article"
       "footer footer";
-    grid-template-rows: 30% 10% 1fr 5%;  
+    grid-template-rows: 30% 10% 55% 1fr;
     grid-template-columns: 30% 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     height: 100vh;
-    margin: 0;
     background-image: url(../images/symphony.png);
     
     }  
@@ -85,8 +84,7 @@ body {
     font-family:  'Pacifico',cursive; 
     font-size: 3em; 
     line-height: 1.3em; 
-    font-weight: normal; 
-    margin-bottom: 0px; 
+    font-weight: normal;
     padding: 0px;
     text-align: center; 
     text-shadow: 0 1px 1px #fff;
@@ -101,7 +99,7 @@ body {
     font-size: 2.0em; 
     line-height: 1em; 
     font-weight: normal; 
-    margin-bottom: 0px; 
+
     padding: 0px;
     text-align: center; 
     text-shadow: 0 1px 1px #fff;
@@ -142,7 +140,7 @@ body {
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
   }
   #books { 
     grid-column: 1 / 2;
@@ -150,7 +148,7 @@ body {
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
   }
   #science { 
     grid-column: 1 / 2;
@@ -158,7 +156,7 @@ body {
     font-family: 'Ostrich Sans Bold', sans-serif;
     border: 2px solid #f76707;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
   }
   #mainNav { 
     

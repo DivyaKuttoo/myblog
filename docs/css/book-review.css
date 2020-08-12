@@ -11,6 +11,7 @@
      src:local('Ostrich Sans Medium'),local('OstrichSans-Medium'),
      url("./ostrich-regular.ttf") format('truetype')
     }
+
   #rev-body { 
       display: grid;
       grid-template-areas: 
@@ -50,4 +51,3 @@
     }
     .modal-lg{
         max-width: 60%;
-    }

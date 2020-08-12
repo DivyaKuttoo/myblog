@@ -17,48 +17,24 @@ body {
       "header"
       "article"
       "footer";
-    grid-template-rows: 6% 1fr 4.9%;  
+    grid-template-rows: 8% 1fr 4.9%;
     grid-template-columns:  1fr;
-    
     height: 100vh;
     margin: 0;
     background-image: url(../images/symphony.png);
-    
     }  
   
-  #pageHeader {
-    padding:1.1em;
-    grid-area: header;
-    display: grid;
-    grid-template-rows: 1fr ;  
-  
-    grid-row-gap: 15px;
-    background-image: url(../images/symphony.png);
-    
-    
-    }
-  
-  #pageHeaderToday {
-    
-    text-align: right;
-    font-size: 1.2vw;
-    font-weight:900;
-    font-family: 'Ostrich Sans Medium', arial;
-
-  }
-  
-
   
   #pageHeaderSubtitle {
     
     
     color: #d54d7b; 
-    font-family:  'Pacifico',cursive; 
-    font-size: 45px; 
-    line-height: 24px; 
+    font-family:  'Pacifico',cursive;
+    font-size: 2em;
+    line-height: 1em;
     font-weight: normal; 
     margin-bottom: 0px; 
-    padding: 0px;
+    padding: 0.2%;
     text-align: center; 
     text-shadow: 0 1px 1px #fff;
   
