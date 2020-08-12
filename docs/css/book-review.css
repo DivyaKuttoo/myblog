@@ -12,7 +12,7 @@
      url("./ostrich-regular.ttf") format('truetype')
     }
 
-  #rev-body { 
+  .rev-body { 
       display: grid;
       grid-template-areas: 
         "header header header"
@@ -24,7 +24,7 @@
       justify-content: center;
       
       }  
-    #review {
+    .review {
         grid-area: article;
         grid-column: 2 / 3;
           
@@ -51,3 +51,27 @@
     }
     .modal-lg{
         max-width: 60%;
+    }
+
+    .modal-title {
+        font-size: 1.4em;
+        font-weight: bold;
+        
+    }
+    #rev-pageHeader {
+        padding-bottom: 2em;
+    }
+    #review-text {
+        padding: 2em;
+        
+        margin-left: 8em;
+        margin-right: 8em;
+        border-radius: 1.2em;
+        border-width: thin;
+        border-style: solid;
+        border-color: red;
+        background-color:#d54d7b;
+        color:white;
+        font-size: 1.3em;
+
+    }
