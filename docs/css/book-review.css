@@ -17,13 +17,17 @@
       grid-template-areas: 
         "header header header"
         "article article article";
-      grid-template-rows: 1fr 7fr;  
+      grid-template-rows: 1fr 1fr 1fr 7fr;
       grid-template-columns:  2fr 5fr 2fr;
       
       background-image: url(../images/symphony.png);
       justify-content: center;
       
       }  
+
+
+
+
     .review {
         grid-area: article;
         grid-column: 2 / 3;
@@ -63,15 +67,30 @@
     }
     #review-text {
         padding: 2em;
-        
-        margin-left: 8em;
-        margin-right: 8em;
-        border-radius: 1.2em;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-radius: 0.5em;
         border-width: thin;
         border-style: solid;
         border-color: red;
         background-color:#d54d7b;
         color:white;
         font-size: 1.3em;
-
+    }
+    button > span {
+        color:black;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    div > span {
+    background-color: #fdb907;
+    color: #000;
+    line-height: 1.0em;
+    min-height: 2em;
+    border-radius: 3px;
+    padding-left: 2em;
+    padding-right:2em;
+    font-weight: thin;
+    font-size: 1.2em;
+    padding-bottom: 0px;
     }
